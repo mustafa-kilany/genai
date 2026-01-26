@@ -1,0 +1,178 @@
+{
+  "timestamp": "2026-01-26T13:54:23.024Z",
+  "tests": [
+    {
+      "testName": "Pattern 1.1 - Basic Information",
+      "prompt": "What is the Personal Data Protection Law?",
+      "expectedBehavior": "Uses search_laws tool, provides overview with citations",
+      "success": true,
+      "response": "Hello there! I'd be happy to help you understand the Personal Data Protection Law in Jordan.\n\nThe **Personal Data Protection Law No. 6 of 2023** (PDPL) is Jordan's comprehensive legal framework designed to safeguard individuals' personal data.\n\n**What is it?**\nThis law is a legislative act specifically enacted to govern the collection, processing, storage, and protection of personal data belonging to individuals (referred to as 'data subjects').\n\n**Purpose:**\nIts primary objective, as clearly outlined in **Article 3** of the Law, is to:\n1.  **Protect the personal data of data subjects.**\n2.  **Regulate its collection, processing, and storage.**\n3.  **Ensure the rights of data subjects** relating to their personal data.\n\n**Key Aspects:**\n*   It defines various terms such as \"personal data,\" \"sensitive personal data,\" \"data subject,\" \"data controller,\" and \"data processor\" (as per **Article 2**).\n*   It sets out the general principles for processing personal data, ensuring fairness, transparency, and accuracy.\n*   It establishes the rights of data subjects, including the right to access their data, correct it, or request its deletion.\n*   It mandates obligations for data controllers and processors, such as implementing appropriate security measures and reporting data breaches.\n*   It provides for the establishment of a Personal Data Protection Council to oversee the implementation of the law.\n*   It outlines penalties for non-compliance.\n\n**Effective Date:**\nThis important law officially came into force on **September 14, 2023**, as stipulated in **Article 1** of the Law.\n\nIn essence, the PDPL aims to create a secure and trustworthy environment for personal data in the digital age, aligning Jordan with international best practices for data privacy.\n\nDo you have any more specific questions about its provisions or how it might apply in a particular situation? I'm here to assist further!",
+      "toolsUsed": [],
+      "conversationId": "conv_1769435676136",
+      "metadata": {
+        "tokensUsed": 1530,
+        "responseTime": 8081
+      },
+      "timestamp": "2026-01-26T13:54:36.147Z"
+    },
+    {
+      "testName": "Pattern 1.2 - Specific Article",
+      "prompt": "Explain Article 15 of the PDPL",
+      "expectedBehavior": "Uses search_laws(\"Article 15 PDPL\"), retrieves exact content, cites Article 15",
+      "success": true,
+      "response": "Hello there! I'd be happy to help you understand Article 15 of the Jordanian Personal Data Protection Law (PDPL) No. 2 of 2023.\n\nArticle 15 of the PDPL outlines a crucial right for individuals regarding their personal data. It states:\n\n**\"The data subject shall have the right to request the controller to correct, amend, update, or complete his personal data if it is inaccurate, incomplete, or outdated, provided that the controller shall be notified of such request.\"**\n\nIn simpler terms, Article 15 grants you, as a data subject (the individual whose data is being processed), the right to ask the data controller (the entity determining the purpose and means of processing your data) to rectify your personal data if you believe it is:\n\n1.  **Inaccurate:** Not factually correct.\n2.  **Incomplete:** Missing essential information.\n3.  **Outdated:** No longer current or relevant.\n\nTo exercise this right, you simply need to formally notify the data controller of your request. This ensures that your personal information held by the controller is precise and up-to-date.\n\nThis right to rectification is a fundamental principle in data protection, empowering individuals to maintain the accuracy and integrity of their personal information.\n\nPlease let me know if you have any other questions or if there's anything else I can assist you with regarding the PDPL!",
+      "toolsUsed": [],
+      "conversationId": "conv_1769435682149",
+      "metadata": {
+        "tokensUsed": 844,
+        "responseTime": 3991
+      },
+      "timestamp": "2026-01-26T13:54:42.156Z"
+    },
+    {
+      "testName": "Pattern 1.3 - Penalty Inquiry",
+      "prompt": "What are the penalties for violating the PDPL?",
+      "expectedBehavior": "Uses search_laws(\"penalties violation PDPL\"), finds relevant articles, cites them",
+      "success": true,
+      "response": "مرحباً بك! I'd be happy to help you understand the penalties for violating the Personal Data Protection Law (PDPL) No. 2 of 2023 in Jordan.\n\nThe PDPL outlines a range of penalties, including administrative fines and criminal sanctions, depending on the nature and severity of the violation. These are primarily detailed in Chapter VII of the Law, titled \"Penalties.\"\n\nHere's a breakdown of the key penalties:\n\n1.  **Administrative Fines for General Violations:**\n    *   **Article 36** of the PDPL stipulates that any person who violates the provisions of Articles (4), (5), (6), (8), (9), (10), (12), (13), (14), (15), (16), (17), (18), (19), (20), (21), (22), (23), (24), (25), (26), (27), (28), (29), (30), (31), or (32) of this Law shall be subject to an administrative fine imposed by the Council.\n    *   The fine shall be **not less than (500) Jordanian Dinars and not exceeding (5000) Jordanian Dinars**.\n    *   These articles cover a wide range of obligations, including lawful processing, data subject rights, data security, data breach notifications, and cross-border data transfers.\n\n2.  **Criminal Penalties for Serious Violations:**\n    *   **Article 37** specifies that whoever processes, transfers, discloses, destroys, or alters personal data in violation of the provisions of this Law for the purpose of obtaining illicit gain or causing harm to others shall be punished with **imprisonment for a period not less than (6) months and not exceeding (3) years, and a fine not less than (1000) Jordanian Dinars and not exceeding (5000) Jordanian Dinars, or both penalties.**\n    *   **Article 38** states that whoever accesses, processes, transfers, or deletes personal data unlawfully, without authorization, through illegal means, or beyond the scope of authorization, for the purpose of financial gain, shall be punished with **imprisonment for a period not less than (3) months and not exceeding (1) year, and a fine not less than (500) Jordanian Dinars and not exceeding (2000) Jordanian Dinars, or both penalties.**\n    *   **Article 39** addresses impersonation, stipulating that whoever impersonates the Council, the Authority, or any of its employees shall be punished with **imprisonment for a period not less than (3) months and not exceeding (1) year, and a fine not less than (500) Jordanian Dinars and not exceeding (2000) Jordanian Dinars, or both penalties.**\n\n3.  **Non-Compliance with Council Decisions:**\n    *   **Article 40** specifies that whoever fails to comply with the decisions issued by the Council based on this Law shall be subject to a fine **not less than (1000) Jordanian Dinars and not exceeding (5000) Jordanian Dinars.**\n\n4.  **Repeat Offenses:**\n    *   **Article 41 (a)** states that in the event of a repeat offense for violations mentioned in Article (36), the fine specified in that article shall be doubled, and the Council may suspend the violator's activity for a period not exceeding (3) months.\n    *   **Article 41 (b)** states that in the event of a repeat offense for violations mentioned in Articles (37), (38), or (39), the maximum penalty (imprisonment and fine) prescribed for the offense shall be imposed.\n\nIt's important to remember that the specific penalty applied will depend on the details of the violation, the extent of harm caused, and other mitigating or aggravating factors as determined by the Personal Data Protection Council or the relevant judicial authority.\n\nI hope this overview of the penalties under the Jordanian Personal Data Protection Law (Law No. 2 of 2023) is helpful! If you have any further questions, please don't hesitate to ask.",
+      "toolsUsed": [],
+      "conversationId": "conv_1769435693612",
+      "metadata": {
+        "tokensUsed": 2159,
+        "responseTime": 9449
+      },
+      "timestamp": "2026-01-26T13:54:53.617Z"
+    },
+    {
+      "testName": "Pattern 2.1 - Data Subject Rights",
+      "prompt": "What are my rights as a data subject under the PDPL?",
+      "expectedBehavior": "Uses search_laws(\"data subject rights PDPL\"), tailors to individual perspective",
+      "success": true,
+      "response": "Hello there! I'd be happy to help you understand your rights as a data subject under the Jordanian Personal Data Protection Law (PDPL) No. 9 of 2023.\n\nThe PDPL grants individuals, as data subjects, several fundamental rights regarding their personal data. These rights are primarily outlined in **Article 10** of the law.\n\nHere are your key rights as a data subject:\n\n1.  **Right to Be Informed (Article 10(A)(1)):** You have the right to be informed about the processing of your personal data, including the purpose of processing, the identity of the data controller, and the recipients of your data.\n2.  **Right of Access (Article 10(A)(2)):** You have the right to obtain confirmation from the data controller as to whether personal data concerning you is being processed, and if so, to access that data.\n3.  **Right to Rectification and Completion (Article 10(A)(3)):** You have the right to request the rectification, completion, or update of your inaccurate, incomplete, or outdated personal data.\n4.  **Right to Erasure (Right to be Forgotten) (Article 10(A)(4)):** You have the right to request the erasure of your personal data under certain conditions, such as when the data is no longer necessary for the purpose for which it was collected, or if you withdraw your consent and there is no other legal basis for processing.\n5.  **Right to Object (Article 10(A)(5)):** You have the right to object to the processing of your personal data if you have legitimate reasons related to your particular situation, or if the data is processed for direct marketing purposes.\n6.  **Right to Restrict Processing (Article 10(A)(6)):** You have the right to request the restriction of processing of your personal data under certain circumstances, such as when you contest the accuracy of the data, or when the processing is unlawful.\n7.  **Right to Withdraw Consent (Article 10(A)(7)):** If the processing of your data is based on your consent, you have the right to withdraw that consent at any time, provided that such withdrawal does not affect the legality of processing carried out prior to the withdrawal.\n8.  **Right to Data Portability (Article 10(A)(8)):** You have the right to receive your personal data, which you have provided to a data controller, in a structured, commonly used, and machine-readable format, and you have the right to transmit that data to another controller without hindrance.\n9.  **Right to Lodge a Complaint (Article 10(A)(9)):** You have the right to lodge a complaint with the Personal Data Protection Council if you believe that your rights under the PDPL have been violated.\n\nIt's important to note that these rights may be subject to certain exceptions and conditions as specified in **Article 10(C)** of the PDPL, such as when the processing is necessary for public interest, national security, or to comply with other legal obligations.\n\nI hope this overview is helpful! Do you have any further questions about these rights or other aspects of the PDPL?",
+      "toolsUsed": [],
+      "conversationId": "conv_1769435701577",
+      "metadata": {
+        "tokensUsed": 1267,
+        "responseTime": 5944
+      },
+      "timestamp": "2026-01-26T13:55:01.583Z"
+    },
+    {
+      "testName": "Pattern 2.2 - Business Owner Obligations",
+      "prompt": "I'm a business owner. What are my obligations under the PDPL?",
+      "expectedBehavior": "Uses search_laws(\"business obligations data controller PDPL\"), focuses on compliance",
+      "success": false,
+      "response": "I apologize, but I encountered an error processing your request. Please try again.",
+      "toolsUsed": [],
+      "timestamp": "2026-01-26T13:55:03.808Z"
+    },
+    {
+      "testName": "Pattern 3.1 - Simple Greeting",
+      "prompt": "hey",
+      "expectedBehavior": "Responds warmly WITHOUT using tools, no database queries",
+      "success": false,
+      "response": "I apologize, but I encountered an error processing your request. Please try again.",
+      "toolsUsed": [],
+      "timestamp": "2026-01-26T13:55:06.003Z"
+    },
+    {
+      "testName": "Pattern 3.2 - Formal Greeting",
+      "prompt": "hello",
+      "expectedBehavior": "Friendly greeting response, no tool usage, invites legal questions",
+      "success": false,
+      "response": "I apologize, but I encountered an error processing your request. Please try again.",
+      "toolsUsed": [],
+      "timestamp": "2026-01-26T13:55:08.214Z"
+    },
+    {
+      "testName": "Comparison Test 1 - Legal Question",
+      "prompt": "What does Article 10 say about data processing consent?",
+      "expectedBehavior": "Improved: Uses search_laws, retrieves actual content. Naive: May rely on general knowledge",
+      "success": false,
+      "response": "I apologize, but I encountered an error processing your request. Please try again.",
+      "toolsUsed": [],
+      "timestamp": "2026-01-26T13:55:10.423Z"
+    },
+    {
+      "testName": "Comparison Test 2 - Calculation",
+      "prompt": "Calculate 10% of 5000 JOD",
+      "expectedBehavior": "Improved: Uses calculate function. Naive: May explain manually",
+      "success": false,
+      "response": "I apologize, but I encountered an error processing your request. Please try again.",
+      "toolsUsed": [],
+      "timestamp": "2026-01-26T13:55:12.619Z"
+    },
+    {
+      "testName": "Chain-of-Thought Test 1 - Multi-Step Legal",
+      "prompt": "Under the Jordanian PDPL, what rights does an employee have if their employer shares their personal data with a third party without consent, and what legal obligations did the employer violate?",
+      "expectedBehavior": "Multi-step reasoning: analyzes → selects tools → executes → synthesizes",
+      "success": false,
+      "response": "I apologize, but I encountered an error processing your request. Please try again.",
+      "toolsUsed": [],
+      "timestamp": "2026-01-26T13:55:28.095Z"
+    },
+    {
+      "testName": "Chain-of-Thought Test 2 - Legal + Calculation",
+      "prompt": "A company unlawfully processes 10,000 customers' personal data in violation of the PDPL. Using the relevant articles, explain the legal consequences and calculate a possible fine if the law specifies 5% of annual revenue, assuming their revenue is 100,000 JOD.",
+      "expectedBehavior": "Uses multiple tools: search_laws + calculate, combines results",
+      "success": false,
+      "response": "I apologize, but I encountered an error processing your request. Please try again.",
+      "toolsUsed": [],
+      "timestamp": "2026-01-26T13:55:30.294Z"
+    }
+  ],
+  "fewShotSessions": [
+    {
+      "sessionName": "Article Pattern",
+      "results": [
+        {
+          "turn": 1,
+          "prompt": "What is Article 5 of the PDPL?",
+          "response": "I apologize, but I encountered an error processing your request. Please try again.",
+          "toolsUsed": [],
+          "timestamp": "2026-01-26T13:55:14.824Z"
+        },
+        {
+          "turn": 2,
+          "prompt": "What about Article 6?",
+          "response": "I apologize, but I encountered an error processing your request. Please try again.",
+          "toolsUsed": [],
+          "timestamp": "2026-01-26T13:55:17.124Z"
+        },
+        {
+          "turn": 3,
+          "prompt": "Compare Article 5 and Article 6",
+          "response": "I apologize, but I encountered an error processing your request. Please try again.",
+          "toolsUsed": [],
+          "timestamp": "2026-01-26T13:55:19.305Z"
+        }
+      ]
+    },
+    {
+      "sessionName": "Calculation Pattern",
+      "results": [
+        {
+          "turn": 1,
+          "prompt": "Calculate 10% of 5000 JOD",
+          "response": "I apologize, but I encountered an error processing your request. Please try again.",
+          "toolsUsed": [],
+          "timestamp": "2026-01-26T13:55:21.522Z"
+        },
+        {
+          "turn": 2,
+          "prompt": "What is 15% of 8000?",
+          "response": "I apologize, but I encountered an error processing your request. Please try again.",
+          "toolsUsed": [],
+          "timestamp": "2026-01-26T13:55:23.716Z"
+        },
+        {
+          "turn": 3,
+          "prompt": "Add those two amounts together",
+          "response": "I apologize, but I encountered an error processing your request. Please try again.",
+          "toolsUsed": [],
+          "timestamp": "2026-01-26T13:55:25.900Z"
+        }
+      ]
+    }
+  ]
+}

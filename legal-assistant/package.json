@@ -1,0 +1,21 @@
+{
+  "name": "legal-assistant",
+  "version": "1.0.0",
+  "description": "A legal assistant app for managing laws, cases, and queries.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "import-laws": "node scripts/importLaws.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
+    "mongoose": "^7.8.8"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

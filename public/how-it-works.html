@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Jordanian Legal Assistant</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-dark: #0d1421;
+            --secondary-dark: #1a2332;
+            --accent-gold: #c9a961;
+            --accent-blue: #2c5282;
+            --text-light: #f5f5f5;
+            --border-sharp: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--primary-dark);
+            color: var(--text-light);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: var(--primary-dark) !important;
+            border-bottom: 3px solid var(--accent-blue);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            color: var(--accent-gold) !important;
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-link {
+            color: #e2e8f0 !important;
+            font-weight: 600;
+            padding: 0.5rem 1.2rem !important;
+            border-radius: var(--border-sharp);
+            transition: all 0.2s;
+            margin: 0 0.2rem;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--accent-gold) !important;
+            background: rgba(201, 169, 97, 0.15);
+            border-bottom: 2px solid var(--accent-gold);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(13, 20, 33, 0.85), rgba(26, 35, 50, 0.85)),
+                        url('/images/images.jpg') center/cover;
+            padding: 5rem 0;
+            border-bottom: 4px solid var(--accent-blue);
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+            margin-bottom: 1.5rem;
+        }
+
+        .content-section {
+            padding: 4rem 0;
+        }
+
+        .step-card {
+            background: var(--secondary-dark);
+            border: 2px solid var(--accent-blue);
+            border-radius: var(--border-sharp);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+            transition: transform 0.2s;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: var(--accent-blue);
+            color: white;
+            border-radius: var(--border-sharp);
+            text-align: center;
+            line-height: 50px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .step-card h3 {
+            color: var(--accent-gold);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+        }
+
+        .step-card p {
+            line-height: 1.8;
+            color: #cbd5e0;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-card {
+            background: var(--secondary-dark);
+            border: 2px solid var(--accent-blue);
+            border-radius: var(--border-sharp);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+        }
+
+        .section-card h2 {
+            color: var(--accent-gold);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .section-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section-card ul li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: #cbd5e0;
+        }
+
+        .section-card ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+            font-weight: bold;
+        }
+
+        .example-box {
+            background: #0f172a;
+            border-left: 4px solid var(--accent-gold);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: var(--border-sharp);
+        }
+
+        .example-box strong {
+            color: var(--accent-gold);
+        }
+
+        .footer {
+            background: var(--primary-dark);
+            border-top: 3px solid var(--accent-blue);
+            padding: 2rem 0;
+            text-align: center;
+            color: #94a3b8;
+            margin-top: auto;
+        }
+
+        .footer a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #e2c97a;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="bi bi-scale"></i> Jordanian Legal Assistant
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/how-it-works">How It Works</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1>How It Works</h1>
+                <p class="lead">Understanding our AI-powered legal assistant system</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Sections -->
+    <div class="content-section">
+        <div class="container">
+            <!-- Steps -->
+            <div class="section-card">
+                <h2><i class="bi bi-list-ol"></i> Step-by-Step Usage</h2>
+                
+                <div class="step-card">
+                    <span class="step-number">1</span>
+                    <h3>Ask Your Question</h3>
+                    <p>
+                        Type your legal question in natural language. You can ask about laws, 
+                        regulations, cases, or request calculations.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <span class="step-number">2</span>
+                    <h3>AI Processing</h3>
+                    <p>
+                        Our AI analyzes your question, searches the legal database, and 
+                        determines if any tools are needed (search, calculation, etc.).
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <span class="step-number">3</span>
+                    <h3>Get Your Answer</h3>
+                    <p>
+                        Receive a comprehensive answer with citations, relevant laws, 
+                        and any calculations performed. You can ask follow-up questions 
+                        for clarification.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <span class="step-number">4</span>
+                    <h3>Rate & Improve</h3>
+                    <p>
+                        Rate the response to help us improve. Your feedback helps train 
+                        the system to provide better answers.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Technical Process -->
+            <div class="section-card">
+                <h2><i class="bi bi-gear"></i> Technical Process</h2>
+                <p>
+                    When you submit a question, the system follows this process:
+                </p>
+                <ul>
+                    <li><strong>Input Processing:</strong> Your question is received and validated</li>
+                    <li><strong>Context Retrieval:</strong> System checks conversation history for context</li>
+                    <li><strong>AI Analysis:</strong> Google Gemini AI analyzes the question</li>
+                    <li><strong>Tool Selection:</strong> AI decides which tools (if any) to use</li>
+                    <li><strong>Data Retrieval:</strong> Tools search laws, cases, or perform calculations</li>
+                    <li><strong>Response Generation:</strong> AI synthesizes information into a clear answer</li>
+                    <li><strong>Logging:</strong> Query and response are logged for evaluation</li>
+                </ul>
+            </div>
+
+            <!-- Agent Tools -->
+            <div class="section-card">
+                <h2><i class="bi bi-tools"></i> Available Tools</h2>
+                <p>The AI assistant has access to several specialized tools:</p>
+                <ul>
+                    <li><strong>Search Laws:</strong> Search through Jordanian legal database</li>
+                    <li><strong>Calculate:</strong> Perform legal calculations (fines, penalties, etc.)</li>
+                    <li><strong>Read File:</strong> Access specific legal documents</li>
+                    <li><strong>Search Cases:</strong> Find relevant legal cases and precedents</li>
+                </ul>
+            </div>
+
+            <!-- Example Questions -->
+            <div class="section-card">
+                <h2><i class="bi bi-question-circle"></i> Example Questions</h2>
+                <p>Here are some examples of questions you can ask:</p>
+                
+                <div class="example-box">
+                    <strong>General Legal Questions:</strong><br>
+                    "What is the Personal Data Protection Law in Jordan?"<br>
+                    "Explain Article 5 of the PDPL"
+                </div>
+
+                <div class="example-box">
+                    <strong>Calculations:</strong><br>
+                    "Calculate the fine for a data breach under PDPL"<br>
+                    "What is 5% of 10,000 JOD?"
+                </div>
+
+                <div class="example-box">
+                    <strong>Case Law:</strong><br>
+                    "Find cases related to data privacy violations"<br>
+                    "Show me precedents for cybercrime cases"
+                </div>
+            </div>
+
+            <!-- Tips -->
+            <div class="section-card">
+                <h2><i class="bi bi-lightbulb"></i> Tips for Best Results</h2>
+                <ul>
+                    <li>Be specific in your questions</li>
+                    <li>Ask follow-up questions for clarification</li>
+                    <li>Use natural language - no need for legal jargon</li>
+                    <li>Rate responses to help improve the system</li>
+                    <li>Check citations for verification</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Jordanian Legal Assistant. All rights reserved.</p>
+            <p>Powered by Google Gemini AI | Built with Express.js & MongoDB</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
