@@ -537,6 +537,57 @@ def create_analysis_table(df):
     print(analysis_df.to_string(index=False))
     print("=" * 60)
 
+def clean_dataframe_for_export(df):
+    """Clean and format dataframe for CSV export"""
+    df_clean = df.copy()
+    
+    # Remove MongoDB's _id field
+    if '_id' in df_clean.columns:
+        df_clean = df_clean.drop('_id', axis=1)
+    
+    # Convert datetime objects to strings
+    for col in df_clean.columns:
+        if df_clean[col].dtype == 'object':
+            try:
+                # Check if column contains datetime objects
+                if df_clean[col].notna().any():
+                    sample = df_clean[col].dropna().iloc[0]
+                    if hasattr(sample, 'isoformat'):  # datetime object
+                        df_clean[col] = df_clean[col].astype(str)
+            except:
+                pass
+    
+    # Convert metadata (nested dict) to JSON strings
+    if 'metadata' in df_clean.columns:
+        df_clean['metadata'] = df_clean['metadata'].apply(
+            lambda x: json.dumps(x) if isinstance(x, dict) else x
+        )
+    
+    # Convert toolsUsed (list) to JSON strings
+    if 'toolsUsed' in df_clean.columns:
+        df_clean['toolsUsed'] = df_clean['toolsUsed'].apply(
+            lambda x: json.dumps(x) if isinstance(x, list) else x
+        )
+    
+    # Convert conversation (list) to JSON strings
+    if 'conversation' in df_clean.columns:
+        df_clean['conversation'] = df_clean['conversation'].apply(
+            lambda x: json.dumps(x) if isinstance(x, list) else x
+        )
+    
+    # Ensure boolean columns are properly formatted
+    for col in df_clean.columns:
+        if df_clean[col].dtype == 'bool':
+            df_clean[col] = df_clean[col].astype(str)
+    
+    # Reorder columns for better readability
+    preferred_cols = ['question', 'response', 'rating', 'errorOccurred', 'createdAt', 'metadata', 'toolsUsed', 'conversation']
+    existing_preferred = [col for col in preferred_cols if col in df_clean.columns]
+    other_cols = [col for col in df_clean.columns if col not in existing_preferred]
+    df_clean = df_clean[existing_preferred + other_cols]
+    
+    return df_clean
+
 def main():
     """Main evaluation function"""
     print("=" * 60)
@@ -568,10 +619,11 @@ def main():
     print("\n📈 Generating visualizations...")
     create_visualizations(df)
     
-    # Export raw data
-    print("\n💾 Exporting raw data...")
-    df.to_csv('raw_query_data.csv', index=False)
-    print("✓ Raw data exported to raw_query_data.csv")
+    # Export cleaned data
+    print("\n💾 Exporting cleaned data...")
+    df_cleaned = clean_dataframe_for_export(df)
+    df_cleaned.to_csv('interactions.csv', index=False)
+    print("✓ Cleaned interactions exported to interactions.csv")
     
     print("\n" + "=" * 60)
     print("Evaluation complete!")
